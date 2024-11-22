@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://img.freepik.com/premium-photo/pink-paint-splash-isolated-black-background-3d-rendering-3d-illustration_780672-1110.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+header {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: url('') no-repeat center center; 
+    background-size: cover; 
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.563);
+    color: white; 
+}
+
+header h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #fb43b5;
+    letter-spacing: 2px;
+    animation: glow 2s infinite alternate;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff00bb, 0 0 20px #f00f70, 0 0 30px #ed2187;
+    }
+    to {
+        text-shadow: 0 0 20px #ff00bf, 0 0 30px #ea1692, 0 0 40px #e116b1;
+    }
+}
+
+#about {
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #ff009d;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+}
+
+#projects {
+    padding: 2rem;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    color: #f9169a;
+    margin-bottom: 2rem;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ff0090;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+   width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
+  }
+  
+  .modal-content {
+    background-color: #fc98e3;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; 
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: auto; 
+    max-height: 400px; 
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .modal-content p {
+    margin: 15px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+
+footer {
+    padding: 1rem;
+    background: rgb(244, 11, 170);
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+#contact {
+    background-color: rbga(10,8,10,0.26); 
+    color: #f72fc5; 
+    box-shadow: 0 4px 8px rgba(216, 63, 193, 0.32);
+    border-radius: 5%;
+    width: 50%; 
+    max-width: 500px;
+    margin: 5px auto; 
+    padding: 10px;
+}
+
+#contact h2 {
+    color: #fefefe; 
+    text-align: center; 
+    margin-bottom: 5px;
+}
+
+#contact label {
+    display: block; 
+    margin-bottom: 1px; 
+    color: #f410b7; 
+}
+
+#contact input, 
+#contact textarea {
+    width: 100%; 
+    padding: 5px; 
+    margin-bottom: 2px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 12px; 
+    padding: 2px;
+    box-sizing: border-box; 
+}
+
+#contact button {
+    background-color: #cc007af6; 
+    color: rgb(255, 248, 252); 
+   
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+#contact button:hover {
+    background-color: #bd0fa3; 
+}

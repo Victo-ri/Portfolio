@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTSPACE Production Portfolio</title>
+  <link rel="stylesheet" href="Portfolio2.css">
+</head>
+<body>
+  <header>
+    <h1>ARTSPACE Production</h1>
+    <p>Designer graphique | Développeur créatif</p>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+      Bonjour ! Je me spécialise dans la conception graphique et le développement web avec une passion pour la typographie, les visuels audacieux et les solutions créatives.
+      </p>
+    </section>
+    <section id="projects">
+      <h2>Mes Projets</h2>
+      <div class="project-gallery">
+        
+        <div class="project-card" onclick="openModal('modal1')">
+          <img src="https://www.dyspatch.io/wp-content/uploads/2020/09/gif-vs-video.gif" alt="Project 1">
+          <h3>L'exploration de la typographie</h3>
+        </div>
+       
+        <div class="project-card" onclick="openModal('modal2')">
+          <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNndqN3A5ZWw2bHZiZDlhcWw0bDNlaWJwOTMxdWl4cjZrbjd4dHYweSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dq80x5NQyRGcAQp1Ba/giphy.webp" alt="Project 2">
+          <h3>La marque créative</h3>
+        </div>
+        
+        <div class="project-card" onclick="openModal('modal3')">
+          <img src="https://i.pinimg.com/originals/19/3d/d2/193dd28356a704cd9b523210a381d6e8.gif" alt="Project 3">
+          <h3>Dynamic Visuals</h3>
+        </div>
+       
+        <div class="project-card" onclick="openModal('modal4')">
+          <img src="https://i.pinimg.com/originals/fe/1d/69/fe1d69bbb2a2e12d74baa67edbcdd13c.gif" alt="Project 4">
+          <h3>Effets de dégradé</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h2>L'exploration de la typographie</h2>
+      <p>Une exploration de concepts typographiques uniques alliant audace et créativité.</p>
+      <img src="https://www.lafilm.edu/wp-content/uploads/2020/05/JokeTypography-min.png" alt="Typography Example 1">
+      <img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2023/12/typography_definitions_cover.jpg?w=1250&h=1120&crop=1" alt="Typography Example 2">
+      <img src="https://kota-content.b-cdn.net/app/uploads/2024/04/typography-2.png" alt="Typography Example 3">
+      <img src="https://d3rf6j5nx5r04a.cloudfront.net/bDyyrsTlGRF0oFRNUlbrfoJmozM=/2000x1000/blog/f/1/4/f14d9da477e44318b537d72870fe2543.webp" alt="Typography Example 4">
+    </div>
+  </div>
+  
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h2>La marque créative</h2>
+      <p>Une collection de travaux sur l'image de marque présentant des idées de conception novatrices.</p>
+      <img src="https://cdn.agilitycms.com/stickeryou/BlogImages/2014/4_most_creative.jpg" alt="Branding Example 1">
+      <img src="https://colorwhistle.com/wp-content/uploads/2022/11/Branding-ideas-and-inspirations-35.jpg" alt="Branding Example 2">
+      <img src="https://colorwhistle.com/wp-content/uploads/2022/11/Branding-ideas-and-inspirations-23-819x1024.jpg" alt="Branding Example 3">
+      <img src="https://colorwhistle.com/wp-content/uploads/2022/11/Branding-ideas-and-inspirations-7.jpg" alt="Branding example 4">
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h2>Visuels dynamiques</h2>
+      <p>Des conceptions qui captivent le spectateur grâce au mouvement et à des visuels percutants.</p>
+      <img src="https://media1.giphy.com/media/l41lUviO6XvPKpkQw/giphy.gif" alt="Visual Example 1">
+      <img src="https://i.pinimg.com/originals/92/e5/09/92e5097fa6aef8b7bd6f8577b9cbc7b0.gif" alt="Visual Example 2">
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h2>Effets de dégradé</h2>
+      <p>Explorer les effets de dégradés vibrants dans le design moderne.</p>
+      <img src="https://img.freepik.com/premium-photo/abstract-flare-effects-create-vibrant-gradient-from-hot-pink-soft-violet_975188-400806.jpg" alt="Gradient Example 1">
+      <img src="https://img.freepik.com/premium-photo/pink-gradient-background-soothing-blend-soft-vibrant-pink-hues-generative-ai_208978-870.jpg?w=360" alt="Gradient Example 2">
+      <img src="https://64.media.tumblr.com/tumblr_m9bgaq8tzm1rc7pm9o1_400.gif" alt="Gradient Example 3">
+    </div>
+  </div>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="mailto:votre.email@example.com" method="post" enctype="text/plain">
+      <label for="name">Nom:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 ARTSPACE Production. All rights reserved.</p>
+  </footer>
+
+  <script src="Portfolio.js"></script>
+</body>
+</html>
